@@ -1,8 +1,5 @@
-# React + Vite
+# Language Center Website Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website, built using React Ecosystem, employs use of grids and flex box to stylishly create a online platform that makes the brand stand out.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Several packages have been used to realize the website's success.
