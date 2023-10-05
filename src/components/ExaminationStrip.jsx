@@ -9,7 +9,7 @@ const ExaminationStrip = () => {
                 <div className="examination-strip-content">
                            <h3>Our Exams</h3>
                            <div className="strip-intro">
-                                     <h1>Standardized Admission Tests</h1>
+                                     <h1>Standardized Examination Tests</h1>
                                       <p>Looking to study at a university locally or abroad? At TLC, we have a wide variety of exams that students can choose from and prepare in order to attain the required scores to gain entrance to these schools.</p>
                            </div>
                            <div className="examination-strips-wrapper">
