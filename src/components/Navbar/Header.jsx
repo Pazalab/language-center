@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom"
 import { PiPhoneCall } from "react-icons/pi"
+import { CgMenu } from "react-icons/cg"
+import { useContext } from "react"
+import { menuContext } from "./menucontext"
 const Header = () => {
+  const [ sidebarStatus, setSidebarStatus] = useContext(menuContext)
+
+  const openSidebar = () => setSidebarStatus(!sidebarStatus)
   return (
     <header>
               <div className="inner-row">
@@ -20,7 +26,11 @@ const Header = () => {
                                     <div className="action-btns">
                                                <h2><span><PiPhoneCall /></span>+254 721 495774</h2>
                                                <NavLink to={'/register'}>Join Today</NavLink>
+                                               <div className="menu-btn" onClick={openSidebar}>
+                                                        <span><CgMenu /></span>
+                                             </div>
                                     </div>
+                                    
                         </div>
               </div>
     </header>

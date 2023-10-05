@@ -50,6 +50,13 @@ img{
 }
 
 /* Header Styles */
+header{
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+}
 .header-content{
     padding: 0px 40px;
     background: white;
@@ -63,6 +70,35 @@ img{
     -ms-border-radius: 0px 0px 30px 30px;
     -o-border-radius: 0px 0px 30px 30px;
     box-shadow: 0px 0px 2px -1px rgba(7, 24, 0, 0.3);
+}
+header.scrolled-header{
+     background: white;
+     position: fixed;
+     width: 100%;
+     z-index: 99;
+     top: 0;
+     box-shadow: 0px 0px 2px -1px rgba(7, 24, 0, 0.3);
+     transform: translateY(-100%);
+     -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+     -ms-transform: translateY(-100%);
+     -o-transform: translateY(-100%);
+}
+header.scrolled-header .header-content{
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      padding: 0;
+      box-shadow: none;
+}
+header.scrolled-header.active{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
 }
 .header-content a h3{
       color: var(--main-color);
@@ -81,7 +117,8 @@ img{
 .header-content nav ul li a:hover{
      color: var(--main-color);
 }
-.header-content nav ul li a::after{
+.header-content nav ul li a::after,
+.sidebar-nav ul li a::after{
       position: absolute;
       content: '';
       height: 2px;
@@ -96,7 +133,9 @@ img{
       -o-transition: all 0.7s ease;
 }
 .header-content ul li a:hover::after,
-.header-content ul li a.active::after{
+.header-content ul li a.active::after,
+.sidebar-nav ul li a:hover::after,
+.sidebar-nav ul li a.active::after{
      width: 100%;
      left: 0;
 }
@@ -105,6 +144,7 @@ img{
      display: flex;
      align-items: center;
      gap: 20px;
+     position: relative;
 }
 .action-btns h2{
     font-size: 17px;
@@ -133,13 +173,147 @@ img{
      font-size: 14px;
      
 }
+.header-content .menu-btn{
+        width:40px;
+        height: 40px;
+        background: linear-gradient(to right, var(--main-color), rgb(77, 207, 77));
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: none;
+}
+.header-content .menu-btn span{
+    display: flex;
+    color: whitesmoke;
+    font-size: 20px;
+}
+/* Sidebar Styles */
+.sidebar-wrapper{
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+}
+.sidebar-wrapper.active{
+        z-index: 200;
+}
+.sidebar-wrapper .sidebar-overlay{
+       background: #137a46a5;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       z-index: 150;
+       transform: translateY(-100%);
+       -webkit-transform: translateY(-100%);
+       -moz-transform: translateY(-100%);
+       -ms-transform: translateY(-100%);
+       -o-transform: translateY(-100%);
+}
+.sidebar-wrapper .sidebar-content{
+      width: 500px;
+      background: white;
+      z-index: 180;
+      position: absolute;
+      height: 100%;
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+}
+.sidebar-content .sidebar-inner{
+        width: 90%;
+        margin: 20px auto;
+        overflow: hidden;
+}
+
+.sidebar-content .sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sidebar-header a{
+       width: 200px;
+       font-size: 24px;
+       font-family: var(--font-bold);
+       color: var(--main-color);
+       font-weight: 600;
+       transform: translateX(-100%);
+       -webkit-transform: translateX(-100%);
+       -moz-transform: translateX(-100%);
+       -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+}
+.sidebar-header span{
+     display: flex;
+     width: 45px;
+     height: 45px;
+     background: linear-gradient(to right, var(--main-color), rgb(77, 207, 77));
+     border-radius:45px ;
+     -webkit-border-radius:45px ;
+     -moz-border-radius:45px ;
+     -ms-border-radius:45px ;
+     -o-border-radius:45px ;
+     justify-content: center;
+     align-items: center;
+     color: whitesmoke;
+     font-size: 24px;
+     cursor: pointer;
+     transform:translateX(100%);
+     -webkit-transform:translateX(100%);
+     -moz-transform:translateX(100%);
+     -ms-transform:translateX(100%);
+     -o-transform:translateX(100%);
+}
+.sidebar-nav{
+    margin-bottom: 30px;
+}
+.sidebar-nav ul li{
+    line-height: 45px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.sidebar-nav ul li a{
+    color:rgba(7, 24, 0);
+    position: relative;
+    padding-bottom: 8px;
+}
+.sidebar-nav ul li a:hover{
+       color: var(--main-color);
+}
+.sidebar-content .action-btns{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.sidebar-content .action-btns h2,
+.sidebar-content .action-btns a{
+       transform: scale(0);
+       -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+       -ms-transform: scale(0);
+       -o-transform: scale(0);
+       transform-origin: left;
+}
+
 
 
 /*  Footer Styles  */
 footer{
      background: rgb(0, 23, 0);
 }
-
 .footer-content{
       display: grid;
       grid-template-columns: 400px 1fr 1fr 300px;;
@@ -240,4 +414,38 @@ footer{
        height: 1px;
        background: rgba(109, 109, 109, 0.507);
        display: block;
+}
+
+
+@media(max-width: 1300px){
+     .inner-row{
+           width: 90%;
+     }
+}
+
+@media(max-width: 1120px){
+       .header-content .menu-btn{
+              display:  flex;
+       }
+        .header-content nav{
+                display: none;
+        }
+        .footer-content{
+               grid-template-columns: 300px 1fr 1fr 300px;
+        }
+}
+@media(max-width: 1090px){
+    .footer-content{
+           grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 768px){
+        .header-content .action-btns h2,
+        .header-content .action-btns a{
+                display: none;
+        }
+        .footer-content{
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
 }

@@ -15,7 +15,7 @@ const Testimonials = () => {
                                  </div>
                                  <div className="testimonials-row">
                                            <Swiper
-                                                    spaceBetween={20}
+                                                   
                                                     slidesPerView={1}               
                                                     loop={true}
                                                     autoplay={{
@@ -24,9 +24,14 @@ const Testimonials = () => {
                                                      }}
                                                     modules={[Autoplay]}
                                                     breakpoints={{
-                                                         768: {
-                                                                 slidesPerView: 3
-                                                           }
+                                                         1090: {
+                                                                 slidesPerView: 3,
+                                                                 spaceBetween: 20
+                                                           },
+                                                          600: {
+                                                                 slidesPerView: 2,
+                                                                 spaceBetween: 20
+                                                          }
                                                       }}
                                              >
                                                   { testimonials.map(item => 

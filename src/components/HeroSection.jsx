@@ -8,6 +8,7 @@ import trustee2 from '../assets/trustee2.jpg'
 import trustee3 from "../assets/trustee3.jpg"
 import trustee4 from "../assets/trustee5.jpg"
 const HeroSection = () => {
+
   return (
     <section id="hero">
            <div className="inner-row">

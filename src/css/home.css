@@ -1,5 +1,6 @@
 #hero{
      padding: 50px 0 100px;
+     overflow: hidden;
 }
 .hero-content{
      display: grid;
@@ -26,6 +27,7 @@
 .hero-texts-column .action-part{
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
      gap: 20px;
 }
 .action-part .trust-box{
@@ -497,7 +499,7 @@
 
 /* Testimonials Styles */
 .testimonial-section{
-      padding: 100px;
+      padding: 100px 0;
       background: white;
 }
 .testimonial-intro{
@@ -545,17 +547,16 @@
        -o-border-radius: 20px;
        display: grid;
        grid-template-columns: 3fr 1.5fr;
+       gap: 50px;
 }
 .nudge-section-content h1{
      font-size: 65px;
      font-family: var(--font-bold);
      color: whitesmoke;
-     width: 600px;
      margin-bottom: 20px;
 }
 .nudge-section-content p{
      font-size: 20px;
-     width: 700px;
      line-height: 35px;
      color: whitesmoke;
      margin-bottom: 30px;
@@ -593,11 +594,152 @@
 }
 .nudge-section-image img{
         height: 450px;
-        width: 350px;
+        width: 100%;
         border-radius: 170px;
         -webkit-border-radius: 170px;
         -moz-border-radius: 170px;
         -ms-border-radius: 170px;
         -o-border-radius: 170px;
         object-fit: cover;
+}
+@media(max-width: 1150px){
+       .examination-strips-wrapper{
+             grid-template-columns: 1fr;
+             width: 90%;
+             margin: 80px auto 0px auto;
+       }
+       .exam-pictures{
+             width: 600px;
+             margin: auto;
+       }
+
+}
+@media(max-width: 1090px){
+     #hero{
+            padding-top: 80px;
+     }
+       .hero-content,
+       .why-section-content,
+       .about-section-content,
+       .course-types-row,
+       .courses-intro,
+       .examination-strip .strip-intro{
+             grid-template-columns: 1fr;
+       }
+       .hero-texts-column{
+              text-align: center;
+       }
+       .hero-texts-column p{
+            width: 80%;
+            margin: 0px auto 30px auto;
+       }
+       .hero-texts-column .action-part{
+              justify-content: center;
+       }
+
+       .hero-image{
+             width: 70%;
+       }
+       .about-section-images{
+              width: 650px;
+              margin: auto;
+       }
+       .about-section-images img:nth-child(1){
+             transform: translateY(0)       ;
+             -webkit-transform: translateY(0)       ;
+             -moz-transform: translateY(0)       ;
+             -ms-transform: translateY(0)       ;
+             -o-transform: translateY(0)       ;
+}
+   .course-types-row{
+         width: 90%;
+         margin: 80px auto 0px auto;
+   }
+   .course-moja .course-image{
+          height: 350px;
+   }
+   .courses-intro{
+        gap: 20px;
+   }
+   .courses-btn{
+        justify-content: flex-start;
+   }
+   .exam-pictures{
+        width: 100%;
+   }
+   .nudge-section-image img{
+         height: 350px;
+   }
+}
+
+@media(max-width: 768px){
+     .hero-texts-column h1{
+            font-size: 60px;
+     }
+       .hero-image{
+             height: 500px;
+       }
+       .hero-image-column .bubble-text,
+       .bubble-text img{
+             width: 60px;
+             height: 50px;
+       }
+       .bubble-text.spanish,
+       .bubble-text.french{
+              left: 20px;
+       }
+       .bubble-text.english,
+       .bubble-text.chinese{
+              right: 20px;
+       }
+       .bubble-text-content p{
+              font-size: 12px;
+       }
+
+       .reasons-wrapper{
+              grid-template-columns: 1fr;
+              gap: 10px;
+       }
+
+       .about-section-images,
+       .about-section-images img:nth-child(1),
+       .exam-pictures,
+       .exam-pictures img{
+              width: 100%;
+       }
+       .courses-intro h1,
+       .examination-strip h1,
+       .testimonial-intro h1,
+       .nudge-section-content h1{
+             font-size: 55px;
+       }
+       .nudge-section-content{
+             gap: 50px;
+             grid-template-columns: 1fr;
+             text-align: center;
+       }
+       .nudge-section-content a{
+             margin: auto;
+       }
+}
+
+@media(max-width: 500px){
+     .why-section-content h1,
+     .about-section-texts h1{
+            font-size: 45px;
+     }
+     .why-section-content{
+            gap: 30px;
+     }
+      .about-section-images img:nth-child(1),
+      .exam-pictures img:nth-child(2){
+             height: 400px;
+      }
+      .about-section-images img:nth-child(2),
+      .exam-pictures img:nth-child(1){
+             height: 300px;
+      }
+      .testimonial-moja{
+            max-width: 100%;
+      }
 }
