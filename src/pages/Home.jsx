@@ -1,5 +1,6 @@
 import AboutSection from "../components/AboutSection"
 import CoursesSection from "../components/CoursesSection"
+import Footer from "../components/Footer"
 import HeroSection from "../components/HeroSection"
 import Nav from "../components/Navbar/Nav"
 import Testimonials from "../components/Testimonials"
@@ -14,6 +15,7 @@ const Home = () => {
            <AboutSection />
            <CoursesSection />
            <Testimonials />
+           <Footer />
     </>
   )
 }

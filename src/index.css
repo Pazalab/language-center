@@ -133,3 +133,111 @@ img{
      font-size: 14px;
      
 }
+
+
+/*  Footer Styles  */
+footer{
+     background: rgb(0, 23, 0);
+}
+
+.footer-content{
+      display: grid;
+      grid-template-columns: 400px 1fr 1fr 300px;;
+      gap: 50px;
+      padding: 100px 0;
+}
+.footer-column .footer-title{
+     color: whitesmoke;
+     font-weight: 400;
+     font-size: 22px;
+     margin-bottom: 10px;
+}
+.footer-column .footer-logo{
+      width: 180px;
+      margin-bottom: 10px;
+}
+.footer-logo h2{
+    font-size: 30px;
+    color: gainsboro;
+}
+
+.footer-column p{
+      font-size: 16px;
+      color: gainsboro;
+      margin-bottom: 10px;
+}
+.footer-column ul li{
+      line-height: 40px;
+}
+.footer-column ul li a{
+    font-size: 16px;
+    display: flex;
+    color: gainsboro;
+    transition:all 0.7s ease;
+    -webkit-transition:all 0.7s ease;
+    -moz-transition:all 0.7s ease;
+    -ms-transition:all 0.7s ease;
+    -o-transition:all 0.7s ease;
+}
+.footer-column ul li a:hover{
+     transform: scale(0.97);
+     -webkit-transform: scale(0.97);
+     -moz-transform: scale(0.97);
+     -ms-transform: scale(0.97);
+     -o-transform: scale(0.97);
+}
+
+.footer-column h3{
+    color: gainsboro;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.footer-column h3 span{
+     display: flex;
+}
+
+.footer-social-links ul{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px
+}
+.footer-social-links ul li a{
+    font-size: 18px;
+    border: 1px solid rgb(145, 145, 145);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.footer-social-links ul li a:hover{
+     background:rgba(93, 152, 104, 0.3);
+     border: none;
+}
+.copyright-section p{
+     text-align: center;
+     padding: 30px 0;
+     color: whitesmoke;
+     font-size: 14px;
+     font-family: var(--font-light);
+}
+.copyright-section::before{
+       content: "";
+       width: 100%;
+       height: 1px;
+       background: rgba(109, 109, 109, 0.507);
+       display: block;
+}

@@ -504,5 +504,100 @@
        text-align: center;
 }
 .testimonial-intro h1{
-      font-family: ;
+      font-family: var(--font-bold);
+      font-size: 65px
+}
+.testimonials-row{
+     margin-top: 50px;
+}
+.testimonial-moja{
+      max-width: 400px;
+      background: rgba(76, 230, 138, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+.testimonial-moja span{
+      font-size: 30px;
+      color: var(--main-color);
+}
+.testimonial-moja p{
+      line-height: 25px;
+      margin-bottom: 10px;
+}
+
+.nudge-section{
+         margin-top: 100px;
+}
+
+.nudge-section-content{
+       padding:80px  50px;
+       background:linear-gradient(to right, rgba(4, 68, 22, 0.888), rgba(8, 99, 37, 0.668)), url("../assets/contact-action.jpg") no-repeat;
+       background-size: cover;
+       background-position: center;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+       display: grid;
+       grid-template-columns: 3fr 1.5fr;
+}
+.nudge-section-content h1{
+     font-size: 65px;
+     font-family: var(--font-bold);
+     color: whitesmoke;
+     width: 600px;
+     margin-bottom: 20px;
+}
+.nudge-section-content p{
+     font-size: 20px;
+     width: 700px;
+     line-height: 35px;
+     color: whitesmoke;
+     margin-bottom: 30px;
+}
+.nudge-section-content a{
+       width: 200px;
+       height: 55px;
+       background: #ca9e40;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       font-family: var(--font-medium);
+       border-radius: 55px;
+       -webkit-border-radius: 55px;
+       -moz-border-radius: 55px;
+       -ms-border-radius: 55px;
+       -o-border-radius: 55px;
+       gap: 10px;
+}
+.nudge-section-content a span{
+     width: 35px;
+     flex-shrink: 0;
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: whitesmoke;
+     color: var(--main-color);
+     border-radius:50% ;
+     -webkit-border-radius:50% ;
+     -moz-border-radius:50% ;
+     -ms-border-radius:50% ;
+     -o-border-radius:50% ;
+}
+.nudge-section-image img{
+        height: 450px;
+        width: 350px;
+        border-radius: 170px;
+        -webkit-border-radius: 170px;
+        -moz-border-radius: 170px;
+        -ms-border-radius: 170px;
+        -o-border-radius: 170px;
+        object-fit: cover;
 }
