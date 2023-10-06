@@ -104,7 +104,7 @@ const Sidebar = () => {
                                                         <li><NavLink to={'/'}>Home</NavLink></li>
                                                         <li><NavLink to={'/about-us/'}>About Us</NavLink></li>
                                                         <li><NavLink to={'/courses/'}>Courses</NavLink></li>
-                                                        <li><NavLink to={'/gallery/'}>Gallery</NavLink></li>
+                                                        <li><NavLink to={'/exams/'}>Exams</NavLink></li>
                                                         <li><NavLink to={'/contact-us/'}>Contact Us</NavLink></li>
                                               </ul>
                                       </div>

@@ -1,0 +1,173 @@
+.contact-hero{
+    padding: 100px 0;
+}
+.contact-hero-section{
+       text-align: center;
+}
+.contact-hero-section h3{
+      color: var(--main-color)
+}
+.contact-hero-section h1{
+    font-size: 65px;
+    font-family: var(--font-bold);
+}
+.contact-hero-section p{
+       width: 700px;
+       font-size: 18px;
+       line-height: 32px;
+       margin: 10px auto;
+}
+
+.contact-details{
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      gap: 50px;
+     margin-top: 50px;;
+}
+.contact-details .contact-column{
+       background: white;
+       display: flex;
+       padding: 30px;
+       gap: 20px;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+       box-shadow: 0px 0px 4px -1px rgba(218, 218, 218, 0.29);;
+}
+.contact-column .contact-icon{
+      width: 60px;
+      flex-shrink: 0;
+      height: 60px;
+      background: var(--main-color);
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+.contact-icon span{
+    display: flex;
+    font-size: 25px;
+}
+.contact-column h4{
+      font-size: 20px;
+      margin-bottom: 10px;
+}
+.contact-column p{
+     margin-bottom: 10px;
+     font-size: 17px;
+}
+
+.contact-body-section{
+       margin-top: 80px;
+       width: 800px;
+       background: white;
+       padding: 50px;
+       margin: 80px auto 0 auto;
+       border-radius: 30px;
+       -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+       -ms-border-radius: 30px;
+       -o-border-radius: 30px;
+       box-shadow: 0px 0px 4px -1px rgba(230, 230, 230, 0.3);
+}
+
+.form-row{
+    margin-bottom: 30px;
+}
+.form-row label{
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+}
+.form-row .form-control{
+       width: 100%;
+       height: 60px;
+       font-family: var(--font-regular);
+       font-size: 16px;
+       border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+       border: 1px solid rgba(210, 223, 215, 0.564);
+       padding-left: 10px;
+       outline: none;
+}
+
+.form-row textarea{
+    width: 100%;
+    height: 160px;
+    font-family: var(--font-regular);
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgba(210, 223, 215, 0.564);
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+.form-btn button{
+      width: 200px;
+      height: 60px;
+      background: var(--main-color);
+      color: white;
+      font-family: var(--font-regular);
+      font-size: 16px;
+      border-radius: 60px;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
+      -ms-border-radius: 60px;
+      -o-border-radius: 60px;
+      border: none;
+      cursor: pointer;
+}
+.contact-map{
+    margin-top: 80px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-map iframe{
+      width: 100%;
+      border: none;
+}
+
+@media(max-width: 1090px){
+       .contact-hero-section p{
+              width: 90%;
+       }
+       .contact-hero-section h1{
+            font-size: 55px;
+       }
+       .contact-details{
+             grid-template-columns: 1fr;
+             gap: 20px;
+             width: 400px;
+             margin: 50px auto 0px auto;
+       }
+       .contact-body-section{
+               width: 90%;
+       }
+}
+
+@media(max-width: 500px){
+         .contact-details,
+         .contact-body-section{
+                width: 100%;
+         }
+}
