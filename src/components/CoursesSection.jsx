@@ -20,7 +20,7 @@ const CoursesSection = () => {
                                      </div>
                                      <div className="course-types-row">
                                                   { course_excerpt.slice(0,3).map(item => 
-                                                         <NavLink to={'/'} className="course-moja" key={item.id}>
+                                                         <NavLink to={item.url} className="course-moja" key={item.id}>
                                                                    <div className="course-image">
                                                                                 <img src={item.image} alt="" />
                                                                    </div>

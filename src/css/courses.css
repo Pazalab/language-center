@@ -62,41 +62,6 @@
        margin: auto;
 }
 
-/* Exams Styles */
-.exams-section{
-      padding: 100px 0;
-}
-
-.exams-section h3{
-    color: var(--main-color);
-    font-size: 18px;
-}
-.exams-section .strip-intro{
-     display: grid;
-     grid-template-columns: 3fr 2fr;
-     gap: 30px;
-}
-.exams-section h1{
-   font-size: 65px;
-   font-family: var(--font-bold);
-}
-.exams-section .strip-intro p{
-   font-size: 20px;
-   display: flex;
-   align-items: flex-end;
-   line-height: 30px;
-}
-
-.exams-strip-row{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      margin-top: 80px;
-}
-.exams-strip-row .strip-moja{
-      margin-bottom: 0px;
-}
-
 /* Faqs section */
 .faq-section{
     padding: 100px 0;
@@ -190,6 +155,95 @@
       line-height: 30px;
 }
 
+/* Single Course Styles */
+.single-course-body{
+        padding: 100px 0;
+}
+.single-course-intro{ 
+      text-align: center;
+      margin-bottom: 30px;
+}
+.single-course-intro h3{
+      color: var(--main-color);
+}
+.single-course-intro h1{
+       font-size: 65px;
+       font-family: var(--font-bold);
+}
+
+.single-course-content .image img{
+         width: 800px;
+         margin: auto;
+         display: block;
+         border-radius: 30px;
+         overflow: hidden;
+         -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+         -ms-border-radius: 30px;
+         -o-border-radius: 30px;
+}
+
+.single-course-content .course-description{
+         width: 80%;
+         margin: 50px auto 0px auto;
+}
+.course-description p{
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 1090px){
         .course-hero-texts,
         .reasons-section .reasons-wrapper,
@@ -205,6 +259,13 @@
         .courses-themselves-row{
                grid-template-columns: repeat(2,1fr);
         }
+
+        .single-course-content .image img{
+              width: 90%;
+        }
+        .single-course-content .course-description{
+               width: 100%;
+        }
 }
 
 @media(max-width: 768px){
@@ -216,7 +277,8 @@
       }
       .reasons-intro h1,
       .course-hero-texts h1,
-      .faq-intro h2{
+      .faq-intro h2,
+      .single-course-intro h1{
             font-size: 50px
       }
       .course-hero-texts p{

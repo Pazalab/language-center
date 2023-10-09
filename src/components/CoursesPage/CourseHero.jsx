@@ -14,7 +14,7 @@ const CourseHero = () => {
 
                                         <div className="courses-themselves-row">
                                                 { course_excerpt.map(item => 
-                                                         <NavLink to={'/'} className="course-moja" key={item.id}>
+                                                         <NavLink to={item.url} className="course-moja" key={item.id}>
                                                                    <div className="course-image">
                                                                                 <img src={`../${item.image}`} alt="" />
                                                                    </div>

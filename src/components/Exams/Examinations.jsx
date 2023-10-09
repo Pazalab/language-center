@@ -1,6 +1,6 @@
 import { exams } from "../../data/exams"
 
-const Exams = () => {
+const Examinations = () => {
   return (
     <div className="exams-section">
             <div className="inner-row">
@@ -28,4 +28,4 @@ const Exams = () => {
   )
 }
 
-export default Exams
+export default Examinations
