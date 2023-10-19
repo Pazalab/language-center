@@ -4,6 +4,8 @@ import { FiPhoneCall } from "react-icons/fi"
 import { CgFacebook } from "react-icons/cg"
 import { ImTwitter } from "react-icons/im"
 import { AiOutlineInstagram } from "react-icons/ai"
+import logo from '../assets/logo_white.png'
+
 const Footer = () => {
   return (
     <footer>
@@ -11,7 +13,7 @@ const Footer = () => {
                            <div className="footer-content">
                                       <div className="footer-column">
                                                 <div className="footer-logo">
-                                                            <h2>Lang Center</h2>
+                                                            <img src={logo} alt="" />
                                                 </div>
                                                 <p>Address: Ndemi Close / Ndemi Road off Ngong Road</p>
                                                 <p>P.O Box 4661 - 00100</p>

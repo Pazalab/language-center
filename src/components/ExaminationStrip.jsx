@@ -38,7 +38,7 @@ const ExaminationStrip = () => {
                                                    </div>
 
                                                    <div className="courses-btn">
-                                                          <NavLink to={'/'}>Explore All Exams<span><LiaArrowRightSolid /></span></NavLink>
+                                                          <NavLink to={'/exams/'}>Explore All Exams<span><LiaArrowRightSolid /></span></NavLink>
                                                   </div>
                                         </div>
                                         <div className="exam-pictures">

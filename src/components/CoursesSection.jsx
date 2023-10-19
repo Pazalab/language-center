@@ -15,8 +15,9 @@ const CoursesSection = () => {
                                                           <p>We help students to learn and improve their language skills in a way that is both challenging and rewarding.</p>
                                                 </div>
                                                 <div className="courses-btn">
-                                                          <NavLink to={'/'}>Explore All Courses <span><LiaArrowRightSolid /></span></NavLink>
+                                                          <NavLink to={'/courses/'}>Explore All Courses <span><LiaArrowRightSolid /></span></NavLink>
                                                 </div>
+                                          
                                      </div>
                                      <div className="course-types-row">
                                                   { course_excerpt.slice(0,3).map(item => 

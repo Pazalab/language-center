@@ -193,7 +193,10 @@
         margin-bottom: 20px;
 }
 
-
+.course-description .list ul{
+        width: 90%;
+        margin: 0px auto 20px auto;
+}
 
 
 

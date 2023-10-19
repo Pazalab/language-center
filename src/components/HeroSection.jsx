@@ -18,7 +18,7 @@ const HeroSection = () => {
                                                           <h1>Transforming Language Learning in Africa.</h1>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati! Iste vero atque perspiciatis eos ducimus. Ipsum adipisci quis dolorum, rem labore perferendis maiores esse, aperiam mollitia voluptatum est doloribus.</p>
                                                         <div className="action-part">
-                                                                   <NavLink to={'/'}>Explore Courses <span><LiaArrowRightSolid /></span></NavLink>
+                                                                   <NavLink to={'/courses/'}>Explore Courses <span><LiaArrowRightSolid /></span></NavLink>
                                                                    <div className="trust-box">
                                                                             <div className="trust-students">
                                                                                     <img src={trustee1} alt="" />

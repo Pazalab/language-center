@@ -3,6 +3,7 @@ import { PiPhoneCall } from "react-icons/pi"
 import { useContext, useState } from "react"
 import { CgMenu } from "react-icons/cg"
 import { menuContext } from "./menucontext"
+import logo from "../../assets/logo.png"
 const ScrolledHeader = () => {
     const [navStatus, setNavStatus] = useState(false)
    const [ sidebarStatus, setSidebarStatus ] = useContext(menuContext) 
@@ -21,7 +22,7 @@ const ScrolledHeader = () => {
         <div className="inner-row">
               <div className="header-content">
                           <NavLink to={'/'} className='logo'>
-                                     <h3>Language Center</h3>
+                                       <img src={logo} alt="" />
                           </NavLink>
                           <nav>
                                     <ul>

@@ -3,6 +3,8 @@ import { PiPhoneCall } from "react-icons/pi"
 import { CgMenu } from "react-icons/cg"
 import { useContext } from "react"
 import { menuContext } from "./menucontext"
+import logo from "../../assets/logo.png"
+
 const Header = () => {
   const [ sidebarStatus, setSidebarStatus] = useContext(menuContext)
 
@@ -12,7 +14,7 @@ const Header = () => {
               <div className="inner-row">
                         <div className="header-content">
                                     <NavLink to={'/'} className='logo'>
-                                               <h3>Language Center</h3>
+                                               <img src={logo} alt="" />
                                     </NavLink>
                                     <nav>
                                               <ul>

@@ -16,6 +16,7 @@ function App() {
   useEffect(()=>{
          alwaysOnTopPage()
   },[location])
+  
   return (
     <Routes>
              <Route path="/" element={<Home />} />
