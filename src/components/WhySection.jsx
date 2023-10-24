@@ -18,43 +18,43 @@ const WhySection = () => {
                                                <div className="reason-moja">
                                                           <img src={trustees} alt="" />
                                                           <div className="reason-text">
-                                                                   <h4>Trusted By Millions</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <h4>Trusted By So Many</h4>
+                                                                   <p>We&apos;ve earned the confidence of countless learners through our quality education and commitment to their success.</p>
                                                           </div>
                                                </div>
                                                <div className="reason-moja">
                                                           <img src={certificate} alt="" />
                                                           <div className="reason-text">
                                                                    <h4>Certificates Awarded</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <p>Achieve recognized certifications upon completing our programs, enhancing your credentials and opportunities.</p>
                                                           </div>
                                                </div>
                                                <div className="reason-moja">
                                                           <img src={support} alt="" />
                                                           <div className="reason-text">
                                                                    <h4>Reliable Support</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <p>Our dedicated team is here to guide and assist you at every step of your language journey.</p>
                                                           </div>
                                                </div>
                                                <div className="reason-moja">
                                                           <img src={professionals} alt="" />
                                                           <div className="reason-text">
                                                                    <h4>Made By Professionals</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <p>Benefit from expertly crafted courses designed by experienced educators.</p>
                                                           </div>
                                                </div>
                                                <div className="reason-moja">
                                                           <img src={serene} alt="" />
                                                           <div className="reason-text">
                                                                    <h4>Serene Environment</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <p>Experience a peaceful and conducive atmosphere for focused learning and personal growth.</p>
                                                           </div>
                                                </div>
                                                <div className="reason-moja">
                                                           <img src={diversity} alt="" />
                                                           <div className="reason-text">
                                                                    <h4>Diverse Cultural Backgrounds</h4>
-                                                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit obcaecati unde rem omnis, numquam dolor</p>
+                                                                   <p>Immerse yourself in a rich tapestry of cultures, fostering a global perspective and cross-cultural friendships.</p>
                                                           </div>
                                                </div>
                                    </div>

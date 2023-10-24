@@ -15,8 +15,8 @@ const HeroSection = () => {
                       <div className="hero-content">
                                  <div className="hero-texts-column">
                                                <div className="inner-texts">
-                                                          <h1>Transforming Language Learning in Africa.</h1>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati! Iste vero atque perspiciatis eos ducimus. Ipsum adipisci quis dolorum, rem labore perferendis maiores esse, aperiam mollitia voluptatum est doloribus.</p>
+                                                          <h1>Transforming Language.</h1>
+                                                        <p>With a legacy of excellence, The Language Center (TLC) has consistently provided quality services at accessible rates. Our relentless curiosity drives us to explore new frontiers and opportunities. Join us at TLC for an immersive experience in our mission.</p>
                                                         <div className="action-part">
                                                                    <NavLink to={'/courses/'}>Explore Courses <span><LiaArrowRightSolid /></span></NavLink>
                                                                    <div className="trust-box">

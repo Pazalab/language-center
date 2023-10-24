@@ -17,7 +17,7 @@ const Examinations = () => {
                                                 <span>{item.id +1}</span>
                                                 <div className="strip-moja-texts">
                                                             <h4> {item.title}</h4>
-                                                         <p>A standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.</p>
+                                                         <p>{item.description}</p>
                                                 </div>
                                       </div>
                                     )}

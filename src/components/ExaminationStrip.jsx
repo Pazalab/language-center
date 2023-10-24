@@ -18,14 +18,14 @@ const ExaminationStrip = () => {
                                                                <span>1</span>
                                                                 <div className="strip-moja-texts">
                                                                          <h4> Test of English as a Foreign Language (TOEFL)</h4>
-                                                                         <p>A standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.</p>
+                                                                         <p>TOEFL is an internationally recognized exam that assesses non-native English speakers&apos; proficiency in English language skills, including reading, writing, speaking and listening.</p>
                                                                 </div>
                                                    </div>
                                                    <div className="strip-moja">
                                                                <span>2</span>
                                                                 <div className="strip-moja-texts">
                                                                          <h4> International English Language Testing System (IELTS)</h4>
-                                                                         <p>A standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.</p>
+                                                                         <p>IELTS is a widely accepted examination designed to evaluate the English language proficiency of non-native English speakers. It measures 4 language skills: listening, reading, writing and speaking. </p>
                                                                 </div>
                                                    </div>
                                         
@@ -33,7 +33,7 @@ const ExaminationStrip = () => {
                                                                <span>3</span>
                                                                 <div className="strip-moja-texts">
                                                                          <h4>Scholastic Aptitude Test (SAT I & SAT II)</h4>
-                                                                         <p>A standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.</p>
+                                                                         <p>The SAT is a standardized test used for college admissions in the United States. SAT I, often referred to as SAT Reasoning Test, evaluates student&apos;s skills in critical reading, writing and mathematics, serving as a general assessment of their readiness for college. </p>
                                                                 </div>
                                                    </div>
 
@@ -41,9 +41,11 @@ const ExaminationStrip = () => {
                                                           <NavLink to={'/exams/'}>Explore All Exams<span><LiaArrowRightSolid /></span></NavLink>
                                                   </div>
                                         </div>
-                                        <div className="exam-pictures">
-                                                    <img src={exam1} alt="" />
-                                                    <img src={exam2} alt="" />
+                                        <div className="exam-pictures-column">
+                                                   <div className="exam-pictures">
+                                                               <img src={exam1} alt="" />
+                                                               <img src={exam2} alt="" />
+                                                   </div>
                                         </div>
                            </div>
                 </div>

@@ -469,17 +469,20 @@
        justify-content: flex-start;
        margin-top: 50px;
 }
-
+.exam-pictures-column{
+       display: flex;
+       align-items: center;
+}
 .exam-pictures{
        display:grid;
        grid-template-columns: repeat(2,1fr);
        height: max-content;
        align-items: center;
-       gap: 30px;;
+       gap: 30px;
 }
 .exam-pictures img{
        width: 320px;
-       height: 550px;
+       height: 650px;
        border-radius: 160px;
        -webkit-border-radius: 160px;
        -moz-border-radius: 160px;
@@ -488,7 +491,7 @@
        object-fit: cover;
 }
 .exam-pictures img:nth-child(1){
-      height: 400px;
+      height: 450px;
       border-radius: 160px;
       -webkit-border-radius: 160px;
       -moz-border-radius: 160px;
